@@ -16,7 +16,7 @@
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 px-6 mx-auto" id="header">
       <div class="container">
         <div class="flex items-center justify-between relative">
-          <div class="px-4"><a href="#home" class="font-bold text-lg text-white block py-6">VQ Codes</a></div>
+          <div class="px-4"><a href="#home" class="font-bold text-lg text-white block py-6">DYNO</a></div>
           <div class="flex items-center px-4">
             <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
               <span class="hamburger-line origin-top-left"></span>
@@ -30,13 +30,13 @@
                   <a href="#home" class="text-base text-white py-2 mx-8 group-hover:text-primary flex">Home</a>
                 </li>
                 <li class="group">
+                  <a href="#crafting" class="text-base text-white py-2 mx-8 group-hover:text-primary flex">Highlight</a>
+                </li>
+                <li class="group">
                   <a href="#about" class="text-base text-white py-2 mx-8 group-hover:text-primary flex">About Me</a>
                 </li>
                 <li class="group">
-                  <a href="#portfolio" class="text-base text-white py-2 mx-8 group-hover:text-primary flex">Portfolio</a>
-                </li>
-                <li class="group">
-                  <a href="#clients" class="text-base text-white py-2 mx-8 group-hover:text-primary flex">Clients</a>
+                  <a href="#gallery" class="text-base text-white py-2 mx-8 group-hover:text-primary flex">Gallery</a>
                 </li>
                 <li class="group">
                   <a href="#contact" class="text-base text-white py-2 mx-8 group-hover:text-primary flex">Contact</a>
@@ -51,20 +51,23 @@
 
     <!-- Hero Section Start -->
     <section id="hero" class="h-screen w-screen bg-[url('/dist/img/laura-lezman-unsplash.jpg')] bg-cover bg-center">
-      <div class="flex items-center justify-center h-full">
-        <h1 class="text-white text-3xl font-bold">DYNO GRAPHY</h1>
+      <div class="flex flex-col items-center justify-center h-full">
+        <h1 class="text-white text-6xl font-bold">DYNO GRAPHY</h1>
 
-        <button
-          class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 group bg-transparent bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800"
-        >
-          <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 group-hover:bg-transparent group-hover:dark:bg-transparent"> DISCOVER </span>
-        </button>
+        <div class="pt-24">
+          <button class="group relative inline-flex h-12 items-center justify-center overflow-hidden border border-neutral-200 bg-white font-medium">
+            <div class="inline-flex h-12 translate-y-0 items-center justify-center px-6 text-neutral-950 transition duration-500 group-hover:-translate-y-[150%]">Explore</div>
+            <div class="absolute inline-flex h-12 w-full translate-y-[100%] items-center justify-center text-neutral-50 transition duration-500 group-hover:translate-y-0">
+              <a href="#crafting"> <span class="absolute h-full w-full translate-y-full skew-y-12 scale-y-0 bg-teal-300 transition duration-500 group-hover:translate-y-0 group-hover:scale-150"></span><span class="z-10">Explore</span> </a>
+            </div>
+          </button>
+        </div>
       </div>
     </section>
     <!-- Hero Section End -->
 
     <!-- Crafting Visual Section Start -->
-    <section id="hero" class="h-[150vh] w-screen bg-[url('/dist/img/gregoire-jeanneau.jpg')] bg-cover bg-center">
+    <section id="crafting" class="h-screen w-screen bg-[url('/dist/img/gregoire-jeanneau.jpg')] bg-cover bg-center bg-fixed xl:h-[150vh]">
       <div class="text-center h-full">
         <h1 class="text-white text-5xl font-bold pt-32">CRAFTING VISUAL</h1>
 
@@ -86,7 +89,33 @@
     <!-- Crafting Visual Section End -->
 
     <!-- Bio Section Start -->
+    <section id="bio" class="h-screen w-screen bg-[url('/dist/img/takashi-miyazaki1.jpg')] p-4 bg-cover bg-center bg-fixed xl:p-32">
+      <div class="flex flex-wrap items-center justify-center h-full">
+        <div class="w-full xl:w-1/2 relative">
+          <div
+            class="bg-[url('/dist/img/person2.jpeg')] bg-cover w-4/5 rounded-[3.5rem] xl:max-w-2/5 aspect-video xl:aspect-[4/5] xl:absolute xl:right-1/10 xl:-top-32 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.3),_0_6.7px_5.3px_rgba(0,_0,_0,_0.4),_0_12.5px_10px_rgba(0,_0,_0,_0.5),_0_22.3px_17.9px_rgba(0,_0,_0,_0.6),_0_41.8px_33.4px_rgba(0,_0,_0,_0.7),_0_100px_80px_rgba(0,_0,_0,_0.85)]"
+          ></div>
+        </div>
 
+        <div class="w-full xl:w-1/2">
+          <h1 class="text-white text-5xl font-bold pt-32 xl:pt-0">MEET THE PHOTOGRAPHER</h1>
+
+          <h3 class="text-white text-xl font-bold my-6">Dynosaurus Photograph</h3>
+
+          <p class="text-white text-lg font-semibold">
+            Dyno is a dedicated cosplay photographer who brings characters to life through stunning visuals. With a passion for storytelling, they capture the essence of every costume, expression, and pose, transforming fandom into art.
+            Their photography blends cinematic composition, dynamic lighting, and immersive environments to create images that feel as if they’ve leaped straight out of an anime, game, or comic book. Partnering with cosplayers, conventions,
+            and brands, Dyno crafts compelling narratives that celebrate creativity, craftsmanship, and the magic of cosplay.
+          </p>
+
+          <button
+            class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 group bg-transparent bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 focus:ring-4 focus:outline-none focus:ring-lime-300"
+          >
+            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 group-hover:bg-transparent group-hover:dark:bg-transparent"> DISCOVER </span>
+          </button>
+        </div>
+      </div>
+    </section>
     <!-- Bio Section End -->
 
     <!-- Gallery Start -->
@@ -211,6 +240,22 @@
       </div>
     </section>
     <!-- Gallery End -->
+
+    <!-- View More Section Start -->
+
+    <!-- View More Section End -->
+
+    <!-- Genre Section Start -->
+
+    <!-- Genre Section End -->
+
+    <!-- Contact Section Start -->
+
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+
+    <!-- Footer End -->
     <script src="dist/js/script.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
