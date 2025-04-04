@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="src/style.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body class="p-0 m-0">
     <!-- Header Start -->
@@ -22,19 +24,19 @@
             <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#home" class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">Home</a>
+                  <a href="#home" class="text-base text-white py-2 mx-8 group-hover:text-primary flex">Home</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">About Me</a>
+                  <a href="#about" class="text-base text-white py-2 mx-8 group-hover:text-primary flex">About Me</a>
                 </li>
                 <li class="group">
-                  <a href="#portfolio" class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">Portfolio</a>
+                  <a href="#portfolio" class="text-base text-white py-2 mx-8 group-hover:text-primary flex">Portfolio</a>
                 </li>
                 <li class="group">
-                  <a href="#clients" class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">Clients</a>
+                  <a href="#clients" class="text-base text-white py-2 mx-8 group-hover:text-primary flex">Clients</a>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">Contact</a>
+                  <a href="#contact" class="text-base text-white py-2 mx-8 group-hover:text-primary flex">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -48,15 +50,34 @@
     <section id="hero" class="h-screen w-screen bg-[url('/dist/img/laura-lezman-unsplash.jpg')] bg-cover bg-center">
       <div class="flex items-center justify-center h-full">
         <h1 class="text-white text-3xl font-bold">DYNO GRAPHY</h1>
+
+        <button
+          class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 group bg-transparent bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800"
+        >
+          <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 group-hover:bg-transparent group-hover:dark:bg-transparent"> DISCOVER </span>
+        </button>
       </div>
     </section>
     <!-- Hero Section End -->
 
     <!-- Crafting Visual Section Start -->
-    <section id="hero" class="h-screen w-screen bg-[url('/dist/img/laura-lezman-unsplash.jpg')] bg-cover bg-center">
-      <div class="flex items-center justify-center h-full">
-        <h1 class="text-white text-3xl font-bold">CRAFTING VISUAL</h1>
-        <h3 class="text-white text-xl font-bold"></h3>
+    <section id="hero" class="h-[150vh] w-screen bg-[url('/dist/img/omid-armin.jpg')] bg-cover bg-center">
+      <div class="text-center h-full">
+        <h1 class="text-white text-5xl font-bold pt-32">CRAFTING VISUAL</h1>
+
+        <h3 class="text-white text-xl font-bold mt-5 mb-25">THAT IGNITE IMAGINATION AND EMOTIONS</h3>
+
+        <div class="relative w-screen text-center">
+          <div class="flex items-center justify-center">
+            <img src="dist/img/person.jpeg" alt="" class="w-2/5 z-2" />
+          </div>
+
+          <img src="dist/img/gallery/12.jpeg" alt="" class="crafting-img absolute w-2/8 left-1/10 -top-1/10" />
+          <img src="dist/img/gallery/10.jpeg" alt="" class="crafting-img absolute w-2/14 left-3/12 top-3/10 z-3" />
+          <img src="dist/img/gallery/11.jpeg" alt="" class="crafting-img absolute w-1/10 left-3/14 top-5/10 z-4" />
+          <img src="dist/img/gallery/8.jpeg" alt="" class="crafting-img absolute w-1/8 right-6/22 top-1/8 z-4" />
+          <img src="dist/img/gallery/5.jpeg" alt="" class="crafting-img absolute w-2/9 right-1/12 -top-1/10 z-3" />
+        </div>
       </div>
     </section>
     <!-- Crafting Visual Section End -->
@@ -66,8 +87,6 @@
     <!-- Bio Section End -->
 
     <!-- Gallery Start -->
-
-    <!-- Gallery Grid -->
     <section id="gallery" class="bg-gray-100 py-10">
       <div class="mx-auto px-4">
         <!-- Title -->
@@ -80,7 +99,7 @@
           <!-- Image Wrapper -->
           <div class="relative group">
             <a href="#">
-              <img src="dist/img/gallery/thumbnail/1.jpeg" alt="Gambar 1" class="w-full h-auto shadow-lg" />
+              <img src="dist/img/gallery/thumbnail/1.jpeg" alt="Gambar 1" class="w-full h-auto shadow-lg gallery-img" />
               <!-- Overlay -->
               <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                 <span class="text-white text-lg font-semibold">Gambar 1</span>
@@ -90,7 +109,7 @@
 
           <div class="relative group">
             <a href="#">
-              <img src="dist/img/gallery/thumbnail/2.jpeg" alt="Gambar 2" class="w-full h-auto shadow-lg" />
+              <img src="dist/img/gallery/thumbnail/2.jpeg" alt="Gambar 2" class="w-full h-auto shadow-lg gallery-img" />
               <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                 <span class="text-white text-lg font-semibold">Gambar 2</span>
               </div>
@@ -99,7 +118,7 @@
 
           <div class="relative group">
             <a href="#">
-              <img src="dist/img/gallery/thumbnail/3.jpeg" alt="Gambar 3" class="w-full h-auto shadow-lg" />
+              <img src="dist/img/gallery/thumbnail/3.jpeg" alt="Gambar 3" class="w-full h-auto shadow-lg gallery-img" />
               <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                 <span class="text-white text-lg font-semibold">Gambar 3</span>
               </div>
@@ -108,7 +127,7 @@
 
           <div class="relative group">
             <a href="#">
-              <img src="dist/img/gallery/thumbnail/4.jpeg" alt="Gambar 4" class="w-full h-auto shadow-lg" />
+              <img src="dist/img/gallery/thumbnail/4.jpeg" alt="Gambar 4" class="w-full h-auto shadow-lg gallery-img" />
               <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                 <span class="text-white text-lg font-semibold">Gambar 4</span>
               </div>
@@ -117,7 +136,7 @@
 
           <div class="relative group">
             <a href="#">
-              <img src="dist/img/gallery/thumbnail/5.jpeg" alt="Gambar 5" class="w-full h-auto shadow-lg" />
+              <img src="dist/img/gallery/thumbnail/5.jpeg" alt="Gambar 5" class="w-full h-auto shadow-lg gallery-img" />
               <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                 <span class="text-white text-lg font-semibold">Gambar 5</span>
               </div>
@@ -126,7 +145,7 @@
 
           <div class="relative group">
             <a href="#">
-              <img src="dist/img/gallery/thumbnail/6.jpeg" alt="Gambar 6" class="w-full h-auto shadow-lg" />
+              <img src="dist/img/gallery/thumbnail/6.jpeg" alt="Gambar 6" class="w-full h-auto shadow-lg gallery-img" />
               <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                 <span class="text-white text-lg font-semibold">Gambar 6</span>
               </div>
@@ -135,7 +154,7 @@
 
           <div class="relative group">
             <a href="#">
-              <img src="dist/img/gallery/thumbnail/7.jpeg" alt="Gambar 7" class="w-full h-auto shadow-lg" />
+              <img src="dist/img/gallery/thumbnail/7.jpeg" alt="Gambar 7" class="w-full h-auto shadow-lg gallery-img" />
               <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                 <span class="text-white text-lg font-semibold">Gambar 7</span>
               </div>
@@ -144,7 +163,7 @@
 
           <div class="relative group">
             <a href="#">
-              <img src="dist/img/gallery/thumbnail/8.jpeg" alt="Gambar 8" class="w-full h-auto shadow-lg" />
+              <img src="dist/img/gallery/thumbnail/8.jpeg" alt="Gambar 8" class="w-full h-auto shadow-lg gallery-img" />
               <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                 <span class="text-white text-lg font-semibold">Gambar 8</span>
               </div>
@@ -153,7 +172,7 @@
 
           <div class="relative group">
             <a href="#">
-              <img src="dist/img/gallery/thumbnail/9.jpeg" alt="Gambar 8" class="w-full h-auto shadow-lg" />
+              <img src="dist/img/gallery/thumbnail/9.jpeg" alt="Gambar 8" class="w-full h-auto shadow-lg gallery-img" />
               <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                 <span class="text-white text-lg font-semibold">Gambar 8</span>
               </div>
@@ -161,16 +180,7 @@
           </div>
           <div class="relative group">
             <a href="#">
-              <img src="dist/img/gallery/thumbnail/10.jpeg" alt="Gambar 8" class="w-full h-auto shadow-lg" />
-              <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                <span class="text-white text-lg font-semibold">Gambar 8</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="relative group">
-            <a href="#">
-              <img src="dist/img/gallery/thumbnail/11.jpeg" alt="Gambar 8" class="w-full h-auto shadow-lg" />
+              <img src="dist/img/gallery/thumbnail/10.jpeg" alt="Gambar 8" class="w-full h-auto shadow-lg gallery-img" />
               <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                 <span class="text-white text-lg font-semibold">Gambar 8</span>
               </div>
@@ -179,7 +189,16 @@
 
           <div class="relative group">
             <a href="#">
-              <img src="dist/img/gallery/thumbnail/12.jpeg" alt="Gambar 8" class="w-full h-auto shadow-lg" />
+              <img src="dist/img/gallery/thumbnail/11.jpeg" alt="Gambar 8" class="w-full h-auto shadow-lg gallery-img" />
+              <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                <span class="text-white text-lg font-semibold">Gambar 8</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="relative group">
+            <a href="#">
+              <img src="dist/img/gallery/thumbnail/12.jpeg" alt="Gambar 8" class="w-full h-auto shadow-lg gallery-img" />
               <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                 <span class="text-white text-lg font-semibold">Gambar 8</span>
               </div>
@@ -188,8 +207,29 @@
         </div>
       </div>
     </section>
-
     <!-- Gallery End -->
     <script src="dist/js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      const galleryImg = document.querySelectorAll(".gallery-img");
+
+      galleryImg.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = i * 100;
+      });
+
+      const craftingImg = document.querySelectorAll(".crafting-img");
+
+      craftingImg.forEach((img, i) => {
+        img.dataset.aos = "fade-up";
+        img.dataset.aosDelay = i * 50;
+      });
+
+      AOS.init({
+        once: true,
+      });
+    </script>
   </body>
 </html>
