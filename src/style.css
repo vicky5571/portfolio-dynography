@@ -17,7 +17,6 @@
     --color-slate-500: oklch(55.4% 0.046 257.417);
     --color-slate-700: oklch(37.2% 0.044 257.287);
     --color-gray-100: oklch(96.7% 0.003 264.542);
-    --color-gray-900: oklch(21% 0.034 264.665);
     --color-neutral-50: oklch(98.5% 0 0);
     --color-neutral-200: oklch(92.2% 0 0);
     --color-neutral-950: oklch(14.5% 0 0);
@@ -26,8 +25,6 @@
     --spacing: 0.25rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
-    --text-sm: 0.875rem;
-    --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
@@ -51,7 +48,6 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
-    --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --aspect-video: 16 / 9;
     --default-transition-duration: 150ms;
@@ -501,17 +497,26 @@
     --tw-gradient-position: to bottom right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\'\/dist\/img\/gregoire-jeanneau\.jpg\'\)\] {
-    background-image: url('/dist/img/gregoire-jeanneau.jpg');
+  .bg-\[url\(\'\/dist\/img\/biobg\.jpg\'\)\] {
+    background-image: url('/dist/img/biobg.jpg');
+  }
+  .bg-\[url\(\'\/dist\/img\/craftingbg\.jpg\'\)\] {
+    background-image: url('/dist/img/craftingbg.jpg');
+  }
+  .bg-\[url\(\'\/dist\/img\/herobg\.jpg\'\)\] {
+    background-image: url('/dist/img/herobg.jpg');
   }
   .bg-\[url\(\'\/dist\/img\/jonny-james\.jpg\'\)\] {
     background-image: url('/dist/img/jonny-james.jpg');
   }
-  .bg-\[url\(\'\/dist\/img\/laura-lezman-unsplash\.jpg\'\)\] {
-    background-image: url('/dist/img/laura-lezman-unsplash.jpg');
+  .bg-\[url\(\'\/dist\/img\/laura-lezman\.jpg\'\)\] {
+    background-image: url('/dist/img/laura-lezman.jpg');
   }
   .bg-\[url\(\'\/dist\/img\/person2\.jpeg\'\)\] {
     background-image: url('/dist/img/person2.jpeg');
+  }
+  .bg-\[url\(\'\/dist\/img\/personn\.jpeg\'\)\] {
+    background-image: url('/dist/img/personn.jpeg');
   }
   .bg-\[url\(\'\/dist\/img\/takashi-miyazaki1\.jpg\'\)\] {
     background-image: url('/dist/img/takashi-miyazaki1.jpg');
