@@ -530,6 +530,9 @@
   .bg-\[url\(\'dist\/img\/herobg\.jpg\'\)\] {
     background-image: url('dist/img/herobg.jpg');
   }
+  .bg-\[url\(\'dist\/img\/jonny-james\.jpg\'\)\] {
+    background-image: url('dist/img/jonny-james.jpg');
+  }
   .from-teal-300 {
     --tw-gradient-from: var(--color-teal-300);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
