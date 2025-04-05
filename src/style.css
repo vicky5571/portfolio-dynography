@@ -521,6 +521,15 @@
   .bg-\[url\(\'\/dist\/img\/takashi-miyazaki1\.jpg\'\)\] {
     background-image: url('/dist/img/takashi-miyazaki1.jpg');
   }
+  .bg-\[url\(\'dist\/img\/biobg\.jpg\'\)\] {
+    background-image: url('dist/img/biobg.jpg');
+  }
+  .bg-\[url\(\'dist\/img\/craftingbg\.jpg\'\)\] {
+    background-image: url('dist/img/craftingbg.jpg');
+  }
+  .bg-\[url\(\'dist\/img\/herobg\.jpg\'\)\] {
+    background-image: url('dist/img/herobg.jpg');
+  }
   .from-teal-300 {
     --tw-gradient-from: var(--color-teal-300);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
