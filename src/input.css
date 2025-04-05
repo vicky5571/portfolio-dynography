@@ -1,8 +1,9 @@
 @import "tailwindcss";
 @theme {
-  --color-primary: #00bba7;
+  --color-primary: #46edd5;
+  /* --color-primary: #00bba7; */
   --color-secondary: #63748d;
-  --color-dark: #1d293d;
+  --color-dark: #181818;
   --font-inter: "Inter", sans-serif;
 }
 
@@ -14,7 +15,7 @@
   }
 
   .hamburger-line {
-    @apply w-[30px] h-[2px] my-2 block bg-dark transition duration-300 ease-in-out;
+    @apply w-[30px] h-[2px] my-2 block bg-white transition duration-300 ease-in-out;
   }
 
   .hamburger-active > span:nth-child(1) {
